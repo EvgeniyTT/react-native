@@ -7,13 +7,16 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, Platform, View, StyleSheet } from 'react-native';
 import Header from './src/components/header';
-
+import AlbumList from './src/components/AlbumList';
 
 export default class App extends Component<{}> {
 
   render() {
     return (
-      <Header />
+      <View>
+        <Header headerText='BABABAB' />
+        <AlbumList />
+      </View>
     );
   }
 }
