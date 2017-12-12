@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 const AlbumDetail = ({ album }) => (
     <Card>
@@ -17,6 +18,13 @@ const AlbumDetail = ({ album }) => (
           <Text>{album.artist}</Text>
         </View>
       </CardSection>
+      <CardSection>
+        <Image
+          source={{ uri: album.image }}
+          style={styles.imageStyle}
+        />
+      </CardSection>
+      <Button text="Click Me!" onPress={} />
     </Card>
 );
 
@@ -37,6 +45,11 @@ const styles = {
     alignItems: 'center',
     marginLeft: 10,
     marginRight: 10,
+  },
+  imageStyle: {
+    height: 300,
+    flex: 1,
+    width: null
   }
 };
 

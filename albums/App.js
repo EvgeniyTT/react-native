@@ -14,7 +14,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View>
-        <Header headerText='BABABAB' />
+        <Header headerText='Albums' />
         <AlbumList />
       </View>
     );
